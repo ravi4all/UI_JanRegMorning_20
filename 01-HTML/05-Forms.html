@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- Login
+    Register
+    Feedback
+    Search
+    Post
+    Test Engine -->
+
+    <!-- method - get and post -->
+    <form action="login.html" method="post">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" name="pwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Pic</td>
+                <td>
+                    <input type="file" name="pic">
+                </td>
+            </tr>
+            <tr>
+                <td>Select City</td>
+                <td>
+                    <!-- <select name="city">
+                        <option>Choose City</option>
+                        <option value="">Delhi</option>
+                        <option value="">Chennai</option>
+                        <option value="">Pune</option>
+                        <option value="">Lucknow</option>
+                        <option value="">Hyderabad</option>
+                    </select> -->
+
+                    <select name="city">
+                        <option>Choose City</option>
+                        <optgroup label="UP">
+                            <option value="noida">Noida</option>
+                            <option value="gzb">Ghaziabad</option>
+                            <option value="lknw">Lucknow</option>
+                        </optgroup>
+                        <optgroup label="MP">
+                            <option value="">Indore</option>
+                            <option value="">Bhopal</option>
+                            <option value="">Gwalior</option>
+                        </optgroup>
+                        <optgroup label="Rajasthan">
+                            <option value="">Jaipur</option>
+                            <option value="">Jaisalmar</option>
+                            <option value="">Kota</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m"> 
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> MCA
+                    <input type="checkbox"> BBA
+                    <input type="checkbox"> MBA
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <!-- <button type="submit">Submit</button> -->
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
