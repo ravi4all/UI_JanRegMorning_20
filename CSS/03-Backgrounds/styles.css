@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+    background-image: url("https://wallpapercave.com/wp/wp4012091.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 450px;
+    /* background-attachment: fixed; */
+}
+#div_1 {
+    background-image: url('../../images/images/l34882-ironman-rigged-original-model--98611.jpg');
+}
+#div_2 {
+    background-image: url("../../images/WebImages/avengers-thor.jpg");
+}
+#div_3 {
+    background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+}
+#div_4 {
+    background-image: url("../../images/WebImages/batman_arkham_knight-1366x768.jpg");
+}
+#div_5 {
+    background-image: url("../../images/WebImages/chris_hemsworth__angry_thor.jpg");
+}
