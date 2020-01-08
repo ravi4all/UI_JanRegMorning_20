@@ -1,0 +1,31 @@
+/* Pseudo Element */
+/* ::after and ::before */
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-1 {
+    background-color: lightgray;
+    float: left;
+    width: 30%;
+}
+
+.col-2 {
+    background-color: lime;
+    float: left;
+    /* float: right; */
+    width: 30%;
+    margin: 0px 60px;
+}
+
+.col-3 {
+    float: right;
+    width: 30%;
+    background-color: lightslategrey;
+}
+
+.div_1 {
+    background-color: red;
+}

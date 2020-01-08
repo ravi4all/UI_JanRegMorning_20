@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+#header {
+    background-color: lightskyblue;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    /* bottom: 0px; */
+}
+
+img {
+    width: 100%;
+}
+#content {
+    margin-top: 120px;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#sidebar_1 {
+    float: left;
+    width: 20%;
+    background-color: lightgray;
+    position: fixed;
+}
+#main {
+    float: left;
+    width: 58%;
+    padding: 10px;
+    margin-left: 21%;
+    background-color: lightgray;
+}
+#sidebar_2 {
+    float: right;
+    width: 18%;
+}
