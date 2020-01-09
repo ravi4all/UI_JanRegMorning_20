@@ -4,10 +4,13 @@ body {
 #header {
     background-color: lightskyblue;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
+    padding: 10px 0px;
     width: 100%;
     top: 0px;
     /* bottom: 0px; */
+    z-index: 1;
 }
 
 img {
@@ -26,16 +29,54 @@ img {
 #sidebar_1 {
     float: left;
     width: 20%;
+    height: 75%;
+    top: 20%;
     background-color: lightgray;
-    position: fixed;
+    position: sticky;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow-y: scroll;
 }
+#sidebar_1 ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#sidebar_1 ul li {
+    border-bottom: 1px solid red;
+    padding: 10px;
+}
+#sidebar_1 ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#sidebar_1 ul li:hover {
+    background-color: #fff;
+}
+
 #main {
     float: left;
     width: 58%;
     padding: 10px;
-    margin-left: 21%;
+    margin-left: 1%;
     background-color: lightgray;
 }
+
+#main .icon {
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    top: 50%;
+    margin-left: -10%;
+    margin-top: -10%;
+}
+
+#main .image {
+    position: relative;
+}
+
 #sidebar_2 {
     float: right;
     width: 18%;
