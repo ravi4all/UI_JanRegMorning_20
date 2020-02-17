@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        .progress {
+            display: inline-block;
+            width: 0px;
+            height: 30px;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <table>
+        <tr>
+            <td>Enter Name</td>
+            <td>
+                <input type="text" placeholder="Enter name" id="box_1">
+            </td>
+            <td>
+                <span class='err'></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Email</td>
+            <td>
+                <input type="text" placeholder="Enter email" id="box_2">
+            </td>
+            <td>
+                <span class='err'></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td>
+                <input type="password" placeholder="Enter password" id="box_3">
+            </td>
+            <td>
+                <span class='err'></span>
+                <span class="progress"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Confirm Password</td>
+            <td>
+                <input type="password" placeholder="Confirm password" id="box_4">
+            </td>
+            <td>
+                <span class='err'></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Upload Pic</td>
+            <td>
+                <input type="file" id="box_5">
+            </td>
+            <td>
+                <span class='err'></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="reset">Reset</button>
+            </td>
+            <td>
+                <button type="submit" id="submitBtn">Register Now</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <div id="p_pic">
+        
+    </div>
+</body>
+</html>
