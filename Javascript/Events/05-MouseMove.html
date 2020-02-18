@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div_1 {
+            height: 500px;
+            transition: 0.5s;
+            background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mouse Move Event</h1>
+
+    <div id="div_1" onmousemove="moveImage(this)"></div>
+    
+    <script>
+        function moveImage(obj) {
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            obj.style.transform = 'translate('+mouseX * 0.2 + 'px,' +mouseY * 0.2 + 'px)';
+        }
+    </script>
+</body>
+</html>
