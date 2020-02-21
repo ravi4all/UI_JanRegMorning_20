@@ -10,7 +10,16 @@
 
     <title>Hello, world!</title>
     <script src="studentsList.js"></script>
+    <script src="model.js"></script>
     <script src="main.js"></script>
+    <style>
+      tr {
+        cursor: pointer;
+      }
+      table tr.bg-danger {
+        color: #fff !important;
+      }
+    </style>
   </head>
   <body>
     
@@ -49,6 +58,86 @@
 
       <section id="section_1">
         <div class="container">
+          <h2 class="text-center">Test Created by You</h2>
+          <hr>
+          <button class="btn btn-success" id="saveTest">Save</button>
+          <button class="btn btn-info">Sort</button>
+          <button class="btn btn-info">Edit</button>
+          <button class="btn btn-info">Search</button>
+          <button class="btn btn-danger" id="del_ques">Delete</button>
+          <table class="table table-hover w-100 table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col">Ques No</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Question</th>
+                    <th scope="col">Option 1</th>
+                    <th scope="col">Option 2</th>
+                    <th scope="col">Option 3</th>
+                    <th scope="col">Option 4</th>
+                    <th scope="col">Answer</th>
+                </tr>
+            </thead>
+            <tbody id="quesList">
+
+            </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section id="section_2">
+        <div class="container">
+            <h2 class="text-center">Create Test</h2>
+            <hr>
+            <div class="form-row">
+              <div class="col">
+                <label for="subject">Example select</label>
+              </div>
+              <div class="col">
+                <select class="form-control" id="subject">
+                  <option>C/C++</option>
+                  <option>Java</option>
+                  <option>JavaScript</option>
+                  <option>Python</option>
+                  <option>Php</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ques">Enter question</label>
+              <input type="text" class="form-control" id="ques" placeholder="Enter the question here">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="opt_1">Option 1</label>
+                <input type="text" class="form-control" id="opt_1">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="opt_2">Option 2</label>
+                <input type="text" class="form-control" id="opt_2">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="opt_3">Option 3</label>
+                <input type="text" class="form-control" id="opt_3">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="opt_4">Option 4</label>
+                <input type="text" class="form-control" id="opt_4">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ans">Enter Answer</label>
+              <input type="text" class="form-control" id="ans" placeholder="Enter the answer here">
+            </div>
+
+            <button class="btn btn-primary w-25" id="ins_ques">Create Test</button>
+        </div>
+      </section>
+
+      <section id="section_3">
+        <div class="container">
             <h2 class="text-center">Students Appeared</h2>
             <hr>
             <table class="table table-hover w-100">
@@ -69,13 +158,6 @@
         </div>
       </section>
       
-      <section id="section_2">
-        <div class="container">
-            <h2>Test Created By You</h2>
-            <hr>
-            <button class="btn btn-primary w-25">Create Test</button>
-        </div>
-      </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
