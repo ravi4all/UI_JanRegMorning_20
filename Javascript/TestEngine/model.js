@@ -41,5 +41,15 @@ var obj = {
         this.quesList = this.quesList.filter(function(x) {
             return x.selected == false;
         })
+    },
+    "search_ques" : function(str) {
+        // for(var i = 0; i < obj.quesList.length; i++) {
+        //     if (obj.quesList[i].subject.toLowerCase().includes(str)) {
+
+        //     }
+        // }
+        this.quesList = this.quesList.filter(function(x) {
+            return x.subject.toLowerCase().includes(str);
+        })
     }
 }

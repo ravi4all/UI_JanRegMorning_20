@@ -11,4 +11,8 @@ table {
     height: 100px;
     width: 200px;
     display: inline-block;
+    font-size: 40px;
+}
+.div_1 {
+    text-align: center;
 }

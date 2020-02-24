@@ -4,6 +4,8 @@ function initEvent() {
     document.querySelector("#ins_ques").addEventListener("click",insertQues);
     document.querySelector("#del_ques").addEventListener("click",deleteQues);
     document.querySelector("#saveTest").addEventListener("click",saveTest);
+    document.querySelector("#show_search").addEventListener("click",showSearch);
+    document.querySelector("#search_ques").addEventListener("keyup",searchQues);
     loadStudents();
     loadTest();
 }
@@ -92,5 +94,15 @@ function selectRow() {
 
 function deleteQues() {
     obj.delete_ques();
+    showQuestions();
+}
+
+function showSearch() {
+    document.querySelector("#search").classList.toggle('showSearch');
+}
+
+function searchQues() {
+    var str = event.srcElement.value.toLowerCase();
+    obj.search_ques(str);
     showQuestions();
 }
