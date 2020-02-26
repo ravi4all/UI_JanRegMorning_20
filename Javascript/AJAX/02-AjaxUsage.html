@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Need of AJAX</h1>
+
+    <input type="text">
+    <button onclick="work()">Start Working</button>
+    
+    <script>
+        function work() {
+            one();
+            two();
+            three();
+        }
+        function one() {
+            console.log("function one executed");
+        }
+        function two() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                // console.log("Status is",this.status);
+                // console.log("Ready State is",this.readyState);
+                if(this.readyState == 4 && this.status == 200) {
+                    console.log("function two executed");
+                    for(var i = 0; i < 100000; i++) {
+                        for(var j = 0; j < 1000; j++) {
+                            k = i + j;
+                        }
+                    }
+                }
+            }
+            xhttp.open('get','');
+            xhttp.send();
+            
+        }
+        function three() {
+            console.log("function three executed");
+        }
+    </script>
+</body>
+</html>

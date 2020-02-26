@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Need of AJAX</h1>
+
+    <input type="text">
+    <button onclick="work()">Start Working</button>
+    
+    <script>
+        function work() {
+            one();
+            two();
+            three();
+        }
+        function one() {
+            console.log("function one executed");
+        }
+        function two() {
+            for(var i = 0; i < 100000; i++) {
+                for(var j = 0; j < 1000000; j++) {
+                    k = i + j;
+                }
+            }
+            console.log("function two executed");
+        }
+        function three() {
+            console.log("function three executed");
+        }
+    </script>
+</body>
+</html>
