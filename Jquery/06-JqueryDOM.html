@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+        }
+        .col {
+            width: 33%;
+            border: 2px solid red;
+            margin: 0px 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jquery DOM</h1>
+
+    <div class="row">
+        <div class="col">
+            <h2>This is column_1</h2>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <hr>
+            <h5>Heading before button</h5>
+            <button>Click Here</button>
+            <h5>Heading after button</h5>
+        </div>
+        <div class="col">
+            <h2>This is column_2</h2>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <hr>
+            <h5>Heading before button</h5>
+            <button>Click Here</button>
+            <h5>Heading after button</h5>
+        </div>
+        <div class="col">
+            <h2>This is column_3</h2>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <hr>
+            <h5>Heading before button</h5>
+            <button>Click Here</button>
+            <h5>Heading after button</h5>
+        </div>
+    </div>
+    
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $("button").click(function() {
+            // $(this).siblings("h5").hide(1000);
+            // $(this).siblings("img").hide(1000);
+            // $(this).parent().hide(1000);
+            // $(this).parents().hide(1000);
+            // $(this).parentsUntil('body').hide(1000);
+            // $(this).prev("h5").hide(1000);
+            // $(this).next("h5").hide(1000);
+            // $(this).parent().siblings().find("img").hide(1000);
+            $(this).parent().next().find("img").hide(1000);
+        })
+    </script>
+</body>
+</html>
